@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=https://example.com/deeplink"> <!-- Thay bằng deep link của bạn -->
+    <script type="text/javascript">
+        setTimeout(function() {
+            window.location.href = "https://example.com/deeplink"; // Deep link của bạn
+            window.location.href = "https://play.google.com/store/apps/details?id=com.example.myapplication"; // Fallback nếu không cài đặt
+        }, 100);
+    </script>
+</head>
+<body>
+    <p>If you are not redirected, <a href="myapp://deeplink">click here</a>.</p>
+</body>
+</html>
